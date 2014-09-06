@@ -1,2 +1,11 @@
 @import "bootstrap-sprockets";
 @import 'bootstrap-custom';
+@import 'customers';
+
+html, body {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.btn {
+  font-weight: 200;
+}

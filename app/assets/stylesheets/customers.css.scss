@@ -1,3 +1,24 @@
-// Place all the styles related to the customers controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.new-customer {
+  margin: 15px;
+}
+
+.customers {
+  margin-top: 100px;
+}
+
+.customer {
+  transition: all 0.3s;
+  padding: 5px;
+  border-left: 1px solid #fff;
+}
+
+.customer:hover {
+  border-left: 1px solid #eee;
+}
+
+.customer .name a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
