@@ -35,6 +35,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'devise'
+gem 'autoprefixer-rails'
+gem 'bootstrap-sass'
+
+
 group :development do
   gem 'spring'
   gem 'guard'
@@ -55,7 +60,6 @@ end
 
 group :test, :development do
   gem 'spinach-rails'
-  gem 'bootstrap-sass'
   gem 'factory_girl'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
