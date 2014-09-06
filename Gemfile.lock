@@ -94,6 +94,8 @@ GEM
     guard-spinach (0.0.3)
       guard (>= 1.1)
       spinach
+    haml (4.0.5)
+      tilt
     hike (1.2.3)
     hitimes (1.2.2)
     i18n (0.6.11)
@@ -258,6 +260,7 @@ DEPENDENCIES
   guard-rspec
   guard-shell
   guard-spinach
+  haml
   jbuilder (~> 2.0)
   jquery-rails
   launchy

@@ -39,6 +39,7 @@ gem 'devise'
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'simple_form'
+gem 'haml'
 
 group :development do
   gem 'spring'
