@@ -166,6 +166,7 @@ GEM
       ffi (>= 0.5.0)
     rdoc (4.1.1)
       json (~> 1.4)
+    recurly (2.3.1)
     require_all (1.3.2)
     rspec (3.1.0)
       rspec-core (~> 3.1.0)
@@ -268,6 +269,7 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.1.5)
   rails_best_practices
+  recurly (~> 2.3.1)
   rspec-its
   rspec-rails
   sass-rails (~> 4.0.3)

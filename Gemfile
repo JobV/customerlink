@@ -40,6 +40,7 @@ gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'haml'
+gem 'recurly', '~> 2.3.1'
 
 group :development do
   gem 'spring'
@@ -53,13 +54,13 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
   gem 'rspec-its'
 end
 
 group :test, :development do
+  gem 'rspec-rails'
   gem 'spinach-rails'
   gem 'factory_girl'
   gem 'factory_girl_rails'
