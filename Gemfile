@@ -46,7 +46,6 @@ group :development do
   gem 'spring'
   gem 'guard'
   gem 'guard-rspec',    require: false
-  gem 'guard-spinach',  require: false
   gem 'guard-shell',    require: false
   gem 'rails_best_practices'
   gem 'foreman'
@@ -61,7 +60,6 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
-  gem 'spinach-rails'
   gem 'factory_girl'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
