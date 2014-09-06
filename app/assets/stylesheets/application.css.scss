@@ -4,8 +4,58 @@
 
 html, body {
   font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 200;
 }
 
 .btn {
   font-weight: 200;
+}
+
+.super-center {
+  width: 250px;
+  height: 500px;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  box-shadow: inset 0 -2px 0 #dddddd;
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding: 0 5px 5px 0;
+  width: 100%;
+
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 #2196f3;
+  }
+}
+
+label {
+  color: #2D3135;
+  font-weight: 500;
+}
+
+.session-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.checkbox {
+  margin-left: 0px !important;
+  top: -34px;
+  left: 110px;
+  margin-bottom: -15px;
+  input[type="checkbox"] {
+    margin-left: 0px;
+  }
 }
