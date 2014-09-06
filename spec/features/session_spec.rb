@@ -19,14 +19,6 @@ feature 'Session management' do
 
   scenario 'User signs in' do
     user = create(:user, password: 'jobiscool')
-    visit '/'
-    expect(page).to have_text('Sign in')
-
-    fill_in 'Email', with: user.email
-    fill_in 'Password', with: 'jobiscool'
-
-    click_on 'Sign in'
-
-    expect(page).to have_http_status(:success)
+    sign_in(user)
   end
 end

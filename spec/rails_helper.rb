@@ -48,8 +48,22 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
   config.include FactoryGirl::Syntax::Methods
+  config.include Devise::TestHelpers, type: :controller
 
   config.before(:suite) do
     FactoryGirl.lint
   end
+end
+
+
+def sign_in(user)
+  visit '/'
+  expect(page).to have_text('Sign in')
+
+  fill_in 'Email', with: user.email
+  fill_in 'Password', with: 'jobiscool'
+
+  click_on 'Sign in'
+
+  expect(page).to have_http_status(:success)
 end
