@@ -41,6 +41,7 @@ gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'haml'
 gem 'recurly', '~> 2.3.1'
+gem 'nokogiri' # speeds up recurly gem
 
 group :development do
   gem 'spring'

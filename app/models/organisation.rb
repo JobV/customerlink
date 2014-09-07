@@ -11,4 +11,8 @@
 class Organisation < ActiveRecord::Base
   has_many :users
   has_many :integrations
+
+  def recurly
+    integrations.find_or_create_by(name: 'recurly')
+  end
 end

@@ -5,6 +5,8 @@ class CustomersController < ApplicationController
   # GET /customers.json
   def index
     @customers = Customer.all
+
+    @recurly = RecurlyService.new(current_user.organisation.integrations.find_by(name: 'recurly'))
   end
 
   # GET /customers/1
