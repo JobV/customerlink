@@ -56,6 +56,7 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'rspec-its'
+  gem 'shoulda-matchers', require: false
 end
 
 group :test, :development do

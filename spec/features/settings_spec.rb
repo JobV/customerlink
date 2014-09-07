@@ -5,8 +5,8 @@ feature 'settings' do
     user = create(:user, password: 'jobiscool')
     sign_in(user)
 
-    click_on 'settings'
+    click_on 'Integrations'
 
-    expect(page).to have_text('Recurly integration')
+    expect(page).to have_text('Recurly')
   end
 end
