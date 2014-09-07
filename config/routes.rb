@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: { registrations: "users/registrations" }
   resources :integrations
 
   resources :organisations
@@ -8,6 +9,5 @@ Rails.application.routes.draw do
   resources :customers
   resources :integrations, only: [:index]
 
-  devise_for :users, controllers: { registrations: "users/registrations" }
 
 end

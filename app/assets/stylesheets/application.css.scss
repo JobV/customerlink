@@ -9,6 +9,7 @@ html, body {
 
 .btn {
   font-weight: 200;
+  transition: all 0.2s;
 }
 
 .super-center {
@@ -65,4 +66,15 @@ label {
   right: 5px;
   top: 5px;
   font-size: 20px;
+}
+
+.bignav a {
+  font-weight: 600;
+  color: #ccc;
+  font-size: 40px;
+  transition: all 0.5s;
+  &:hover {
+    color: #555;
+    text-decoration: none;
+  }
 }

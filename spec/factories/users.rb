@@ -23,6 +23,7 @@ FactoryGirl.define do
     email
     password 'jobiscool'
     password_confirmation 'jobiscool'
+    organisation
   end
 
   sequence :email do |n|

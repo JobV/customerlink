@@ -21,7 +21,8 @@
 require "rails_helper"
 
 RSpec.describe User, type: :model do
-  it 'is true' do
-    expect(true).to be true
-  end
+  subject { create(:user) }
+
+  it { should validate_presence_of(:email) }
+  it { should belong_to(:organisation) }
 end
