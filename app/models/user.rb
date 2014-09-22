@@ -27,4 +27,8 @@ class User < ActiveRecord::Base
   attr_reader :organisation_name
 
   belongs_to :organisation
+
+  def recurly
+    organisation.recurly
+  end
 end

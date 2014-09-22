@@ -11,4 +11,13 @@ class RecurlyService
   def accounts
     account.all
   end
+
+  def connected?
+    begin
+      Recurly::Account.first
+      true
+    rescue
+      false
+    end
+  end
 end

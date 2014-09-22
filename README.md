@@ -41,3 +41,10 @@ To get Postgres (9.3) running on Mac:
 # Tests
 
 `bundle exec guard`
+
+# Architecture of Integrations
+
+Integrations can be easily added by simply creating a model named `<name>Service.`
+For Recurly this is `RecurlyService`. In the `Integration` model, give the name `<name`.
+
+So for Recurly, the service is called `RecurlyService` and in the Integration it is called `recurly`.

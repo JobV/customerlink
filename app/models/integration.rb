@@ -15,4 +15,12 @@ class Integration < ActiveRecord::Base
   validates :name, :organisation_id, presence: true
 
   belongs_to :organisation
+
+  def connected?
+    subdomain && api_key && service.connected?
+  end
+
+  def service
+    (name.capitalize + 'Service').constantize.new(self)
+  end
 end
