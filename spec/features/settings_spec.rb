@@ -21,5 +21,7 @@ feature 'settings' do
     recurly = user.organisation.integrations.last
     expect(recurly.api_key).to eq 'asdf'
     expect(recurly.subdomain).to eq 'test'
+
+    expect(page).to have_text('')
   end
 end

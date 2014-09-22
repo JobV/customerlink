@@ -16,8 +16,9 @@
       .customer
         .name= link_to customer.name, customer
 
-  .customers
-    - @recurly.account.find_each do |account|
-      .customer
-        .name
-          = link_to account.company_name, '#'
+  - if @recurly
+    .customers
+      - @recurly.account.find_each do |account|
+        .customer
+          .name
+            = link_to account.company_name, '#'
