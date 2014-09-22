@@ -31,6 +31,13 @@ All rights reserved, Job van der Voort
 - Ruby 2.1.2 or higher
 - Postgres 9.3 or higher
 
+To get Postgres (9.3) running on Mac:
+- Install postgres.app from http://postgresapp.com/
+- run `gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.3/bin/pg_config`
+- open psql command line (from the app)
+- run `CREATE USER job SUPERUSER;`
+- from your shell command line run `bin/rake db:create db:migrate`
+
 # Tests
 
 `bundle exec guard`
