@@ -11,7 +11,8 @@
   = link_to 'New Customer', new_customer_path, class: 'btn btn-default'
 
 .container
-  .customers
-    - @customers.each do |customer|
-      .customer
-        .name= link_to customer.name, customer
+  %table.table.table-hover
+    %tbody.customer
+      - @customers.each do |customer|
+        %tr.customer
+          %td.name= link_to customer.name, customer
