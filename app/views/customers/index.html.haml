@@ -8,7 +8,11 @@
       = link_to 'Sign out', destroy_user_session_path, method: :delete, role: 'menuitem', tabindex: '-1'
 
 .new-customer
+  = link_to 'Sync', '#', class: 'btn btn-default'
+
+.new-customer
   = link_to 'New Customer', new_customer_path, class: 'btn btn-default'
+
 
 .container
   %table.table.table-hover

@@ -20,4 +20,8 @@ class RecurlyService
       false
     end
   end
+
+  def sync
+
+  end
 end

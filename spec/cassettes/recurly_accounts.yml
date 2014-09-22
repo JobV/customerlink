@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://4fb43a698b5f4c58b3b5bc84233a2ada:@jaxons.recurly.com/v2/accounts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      User-Agent:
+      - Recurly/2.3.1; ruby 2.1.2p95 (2014-05-08 revision 45877) [x86_64-darwin13.0]
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - blackhole
+      Date:
+      - Mon, 22 Sep 2014 21:57:34 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Content-Language:
+      - en-US
+      X-Ratelimit-Limit:
+      - '300'
+      X-Ratelimit-Remaining:
+      - '298'
+      X-Ratelimit-Reset:
+      - '1411423320'
+      X-Records:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a8jql01qi0c759phs9jg
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <accounts type="array">
+          <account href="https://jaxons.recurly.com/v2/accounts/2">
+            <adjustments href="https://jaxons.recurly.com/v2/accounts/2/adjustments"/>
+            <invoices href="https://jaxons.recurly.com/v2/accounts/2/invoices"/>
+            <subscriptions href="https://jaxons.recurly.com/v2/accounts/2/subscriptions"/>
+            <transactions href="https://jaxons.recurly.com/v2/accounts/2/transactions"/>
+            <account_code>2</account_code>
+            <state>active</state>
+            <username></username>
+            <email></email>
+            <first_name>John</first_name>
+            <last_name>Doe</last_name>
+            <company_name>GitLab</company_name>
+            <vat_number>234234</vat_number>
+            <address>
+              <address1></address1>
+              <address2></address2>
+              <city></city>
+              <state></state>
+              <zip></zip>
+              <country></country>
+              <phone></phone>
+            </address>
+            <accept_language nil="nil"></accept_language>
+            <hosted_login_token>d2a3a727a1ada3672671afca1ce4fee2</hosted_login_token>
+            <created_at type="datetime">2014-09-07T14:00:15Z</created_at>
+          </account>
+          <account href="https://jaxons.recurly.com/v2/accounts/1">
+            <adjustments href="https://jaxons.recurly.com/v2/accounts/1/adjustments"/>
+            <billing_info href="https://jaxons.recurly.com/v2/accounts/1/billing_info"/>
+            <invoices href="https://jaxons.recurly.com/v2/accounts/1/invoices"/>
+            <subscriptions href="https://jaxons.recurly.com/v2/accounts/1/subscriptions"/>
+            <transactions href="https://jaxons.recurly.com/v2/accounts/1/transactions"/>
+            <account_code>1</account_code>
+            <state>active</state>
+            <username>Test</username>
+            <email>test@example.com</email>
+            <first_name>Test</first_name>
+            <last_name>account</last_name>
+            <company_name>Testcompany</company_name>
+            <vat_number>1234567890</vat_number>
+            <address>
+              <address1>Addresstest</address1>
+              <address2>address2</address2>
+              <city>zaandam</city>
+              <state>Noord-Holland</state>
+              <zip>1507em</zip>
+              <country>NL</country>
+              <phone>123456789</phone>
+            </address>
+            <accept_language nil="nil"></accept_language>
+            <hosted_login_token>1efa4a7f3b5c050229429c890c9c8fa9</hosted_login_token>
+            <created_at type="datetime">2014-09-06T12:08:50Z</created_at>
+          </account>
+        </accounts>
+    http_version: 
+  recorded_at: Mon, 22 Sep 2014 21:57:33 GMT
+recorded_with: VCR 2.4.0

@@ -42,9 +42,20 @@ To get Postgres (9.3) running on Mac:
 
 `bundle exec guard`
 
-# Architecture of Integrations
+# Architecture
+
+### Integrations
 
 Integrations can be easily added by simply creating a model named `<name>Service.`
 For Recurly this is `RecurlyService`. In the `Integration` model, give the name `<name`.
 
 So for Recurly, the service is called `RecurlyService` and in the Integration it is called `recurly`.
+
+### Syncing customers
+
+Customers are matched by downcase name from several services.
+
+Implementation in steps of complexity:
+
+1. iterate over _all customers_ on each sync.
+2. integrate push services of services (recurly supports this)
