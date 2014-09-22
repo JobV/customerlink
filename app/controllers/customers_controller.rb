@@ -5,17 +5,6 @@ class CustomersController < ApplicationController
   # GET /customers.json
   def index
     @customers = Customer.all
-
-    # Make sure organisation exists
-    unless current_user.organisation
-      org = Organisation.create(name: 'your organisation')
-      org.users << current_user
-    end
-
-    # Check if recurly integration is valid
-    if current_user.recurly && ! current_user.recurly.subdomain.empty? && ! current_user.recurly.api_key.empty?
-      @recurly = RecurlyService.new(current_user.recurly)
-    end
   end
 
   # GET /customers/1

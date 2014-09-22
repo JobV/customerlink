@@ -1,6 +1,11 @@
 require 'rails_helper'
 
 feature 'settings' do
+  before do
+    stub_request(:get, "https://.recurly.com/v2/accounts?per_page=1").
+         to_return(:status => 200, :body => "", :headers => {})
+  end
+
   scenario 'user updates api settings for the first time' do
     user = create(:user, password: 'jobiscool')
     sign_in(user)
@@ -16,6 +21,8 @@ feature 'settings' do
     fill_in 'integration_api_key', with: 'asdf'
     fill_in 'integration_subdomain', with: 'test'
 
+    stub_request(:get, "https://asdf:@test.recurly.com/v2/accounts?per_page=1").
+         to_return(:status => 200, :body => "", :headers => {})
     click_on 'Update integration'
 
     recurly = user.organisation.integrations.last

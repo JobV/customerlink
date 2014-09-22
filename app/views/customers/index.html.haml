@@ -15,10 +15,3 @@
     - @customers.each do |customer|
       .customer
         .name= link_to customer.name, customer
-
-  - if @recurly
-    .customers
-      - @recurly.account.find_each do |account|
-        .customer
-          .name
-            = link_to account.company_name, '#'
