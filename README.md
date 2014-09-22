@@ -1,5 +1,7 @@
 # Customerlink
 
+[ ![Codeship Status for JobV/customerlink](https://www.codeship.io/projects/4a525530-2479-0132-1117-12e55c6fdf6c/status)](https://www.codeship.io/projects/36867)
+
 All rights reserved, Job van der Voort
 
 # Development
