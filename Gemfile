@@ -51,6 +51,7 @@ group :development do
   gem 'rails_best_practices'
   gem 'foreman'
   gem 'quiet_assets'
+  gem 'pry'
 end
 
 group :test do

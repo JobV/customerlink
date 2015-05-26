@@ -27,6 +27,6 @@ FactoryGirl.define do
   end
 
   sequence :email do |n|
-    "person#{n}@example.com"
+    "email#{n}@test.com"
   end
 end

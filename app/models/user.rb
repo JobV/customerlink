@@ -28,6 +28,8 @@ class User < ActiveRecord::Base
 
   belongs_to :organisation
 
+  accepts_nested_attributes_for :organisation
+
   def recurly
     organisation.recurly
   end

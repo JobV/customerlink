@@ -2,7 +2,16 @@ require 'webmock/rspec'
 
 require 'vcr'
 
-VCR.config do |c|
+# VCR.configureconfig.serve_static_asserequire "test/unit"
+#
+# require "tc_test_case_file"
+# require "tc_test_case_file"
+#  do |c|
+#   c.cassette_library_dir     = 'spec/cassettes'
+#   c.hook_into                :webmock
+# end
+
+VCR.configure do |c|
   c.cassette_library_dir     = 'spec/cassettes'
   c.hook_into                :webmock
 end

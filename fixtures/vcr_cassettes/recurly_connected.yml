@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://4fb43a698b5f4c58b3b5bc84233a2ada:@jaxons.recurly.com/v2/accounts?per_page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      User-Agent:
+      - Recurly/2.3.8; ruby 2.1.2p95 (2014-05-08 revision 45877) [x86_64-darwin13.0]
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - blackhole
+      Date:
+      - Tue, 26 May 2015 20:05:11 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Content-Language:
+      - en-US
+      X-Ratelimit-Limit:
+      - '2000'
+      X-Ratelimit-Remaining:
+      - '1999'
+      X-Ratelimit-Reset:
+      - '1432671000'
+      X-Records:
+      - '2'
+      Link:
+      - <https://jaxons.recurly.com/v2/accounts?cursor=1504332554581840540&per_page=1>;
+        rel="next"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - adi0m0327fkpnerckqg0
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <accounts type="array">
+          <account href="https://jaxons.recurly.com/v2/accounts/2">
+            <adjustments href="https://jaxons.recurly.com/v2/accounts/2/adjustments"/>
+            <invoices href="https://jaxons.recurly.com/v2/accounts/2/invoices"/>
+            <subscriptions href="https://jaxons.recurly.com/v2/accounts/2/subscriptions"/>
+            <transactions href="https://jaxons.recurly.com/v2/accounts/2/transactions"/>
+            <account_code>2</account_code>
+            <state>active</state>
+            <username></username>
+            <email></email>
+            <first_name>John</first_name>
+            <last_name>Doe</last_name>
+            <company_name>GitLab</company_name>
+            <vat_number>234234</vat_number>
+            <address>
+              <address1></address1>
+              <address2></address2>
+              <city></city>
+              <state></state>
+              <zip></zip>
+              <country></country>
+              <phone></phone>
+            </address>
+            <accept_language nil="nil"></accept_language>
+            <hosted_login_token>d2a3a727a1ada3672671afca1ce4fee2</hosted_login_token>
+            <created_at type="datetime">2014-09-07T14:00:15Z</created_at>
+          </account>
+        </accounts>
+    http_version: 
+  recorded_at: Tue, 26 May 2015 20:05:11 GMT
+recorded_with: VCR 2.9.3
