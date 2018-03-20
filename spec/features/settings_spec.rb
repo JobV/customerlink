@@ -3,11 +3,12 @@ require 'rails_helper'
 feature 'settings' do
   before do
     stub_request(:get, "https://.recurly.com/v2/accounts?per_page=1").
-         to_return(:status => 200, :body => "", :headers => {})
+         to_return(:status => 200, :body => "", :headers => {})    
   end
 
+  let(:user) { FactoryGirl.create(:user) }
+
   scenario 'user updates api settings for the first time' do
-    user = create(:user, password: 'jobiscool')
     sign_in(user)
 
     expect(user.organisation.integrations.count).to eq 0
